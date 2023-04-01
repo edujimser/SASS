@@ -1,0 +1,22 @@
+Estructura base para SASS con archivos terminados en .scss
+
+	- Mantinene la anidacion de css
+	- Mantiene la estructura SASS
+	- Formato mezclado entre ambos mundo, es el más utilizado
+	- No es soportado por el navegador, debe ser copilado y crearse un archivo .css
+	- Para copilarlos podemos utilizar webpack o gulp
+
+
+
+Estructura .scss -->
+
+    .header{
+	display: flex;
+		.logo{
+			margin-top: 10rem;
+			width: 3rem;
+		}
+	}
+
+Formato en cascada desde el elemento padre como: div, section, main, footer
+

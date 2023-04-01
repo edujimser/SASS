@@ -1,0 +1,20 @@
+Estructura base para SASS con archivos terminados en .sass
+
+
+Consejo:
+	- Estos archivos tienen una tendecia negativa al uso debido a un mayor aceptamiento por SASS .scss
+
+
+Estructura .sass -->
+
+    .header
+	display: flex;
+		.logo
+			margin-top: 10rem;
+			width: 3rem;
+			.
+			.
+			.
+
+Formato en cascada desde el elemento padre como: div, section, main, footer
+
