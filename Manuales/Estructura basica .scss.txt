@@ -5,6 +5,7 @@ Estructura base para SASS con archivos terminados en .scss
 	- Formato mezclado entre ambos mundo, es el más utilizado
 	- No es soportado por el navegador, debe ser copilado y crearse un archivo .css
 	- Para copilarlos podemos utilizar webpack o gulp
+		- También necesitarás tener instalado Node y NPM
 
 
 
