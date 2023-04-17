@@ -1,0 +1,36 @@
+-- INSTALACIÓN EM SERVIDOR O HOST -----------------
+
+1. Descargar Node 
+	1.1 Instalar todas las dependencias
+	1.2 Entrar a Power Shel y comprobar que tiene:
+		- node -v
+		- npm -v
+		- npx -v
+2. Instalar Gulp desde terminal, ya que este es un paquete de Node npm
+	2.1 Comando: npm install --global gulp-cli
+	2.2 Posibles fallos:
+		- No tener instalado los paquete de Node
+		- Ejecutar como administrador el Power Shell
+		- Activar los policie para la ejecución de scripts externos
+			- Comando: Set-ExecutionPolicy RemoteSigned 
+			- Comando si el anterior no funciona: Set-ExecutionPolicy Unrestricted
+		- El antivirus o firewall da problemas con el paquete
+	2.3 Comprobar Gulp: gulp -v
+
+
+-- INSTALACIÓN DE DEPENDENCIAS EN VISUAL STUDIO CODE -----------------
+	1. Crear carpeta contendora de la web y abrirla desde Visual Studio Code
+	2. Abrir terminal en Visual Studio Code
+	3. Crear archivo JSON 
+		3.1 npm init
+		3.2 Rellena los datos
+		3.3 Se crea un archivo package.json
+	4. Comprobar que tiene gulp: gulp -v
+		4.1 Local versión desconocida, hay que isntalar las dependencias
+			4.1.1 Instalar dependecias: 
+	5. Por si necesitamos las dependecias de nodes_modules de donde puede tirar el package-lock.json con el comando : npm i
+	6. Crear un archivo llamado gulpfile.js
+	7. Instalar la dependencia: npm i --save-dec sass gulp-sass
+
+-- ACUDIR AL ARCHIVO CSS PARA VER LOS PRIMEROS PASOS DE CONFIGURACION -----------------
+	
