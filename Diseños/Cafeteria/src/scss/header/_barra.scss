@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/minxins' as m;
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center
+    }
+
+    @include m.desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        gap:7rem;
+    }
+
+    .logo{
+        width: 50%;
+        margin: 0 auto;
+
+        @include m.tablet {
+            width: 20rem;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/minxins' as m;
+
+.contenido-menu{
+    background-image: url(../img/cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    aspect-ratio: 3/5 ; 
+
+    @include m.telefono{
+        aspect-ratio: 3/4;
+    }
+
+    @include m.tablet{
+        @include m.girdColumn(2,5rem);
+        aspect-ratio: 16/6;
+        background-size: 40%; 
+        background-position: top right;
+    }
+
+    @include m.desktop{
+        @include m.girdColumn(2,5rem);
+        aspect-ratio: 16/6;
+        background-size: 40%; 
+        background-position: top right;
+    }
+
+    .texto{
+        font-size: 2rem;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/minxins' as m;
+
+.nav-principal{
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    
+    @include m.tablet {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    @include m.desktop {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    a{
+        text-align: center;
+        color: v.$blanco;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover{
+            color: v.$secundario;
+        }
+
+        &.activo{
+            color: v.$secundario;
+        }
+    }
+
+
+}

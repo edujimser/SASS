@@ -1,0 +1,61 @@
+@use 'base/variables' as v;
+@use 'base/minxins' as m;
+
+.contenido-contacto{
+
+    @include m.tablet{
+        @include m.girdColumn(2, 5rem);
+        background-image: url(../img/granos_cafe.webp);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+    }
+
+    .campo{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding-bottom: 1rem;
+
+        &:nth-child(5){
+            padding-bottom: 2rem;
+        }
+
+        &:last-of-type{
+            padding-bottom: 1rem;
+        }
+
+        @include m.tablet{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            padding-bottom: 1rem;
+
+            &:nth-child(5){
+                padding-bottom: 2rem;
+            }
+
+            &:last-of-type{
+                padding-bottom: 1rem;
+            }
+        
+        }
+
+        label{
+            text-align: left;
+        }
+
+        input, select{
+            border: 2px solid v.$primario;
+        }
+
+        input[type="submit"]{
+            padding: 0.5rem;
+            background-color: gainsboro;
+            color: v.$primario;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+
+}

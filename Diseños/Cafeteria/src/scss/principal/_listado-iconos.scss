@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/minxins' as m;
+
+.iconos{
+    padding-top: 5rem;
+
+    .listado-iconos{
+
+        li{
+            img{
+                margin: 0 auto;
+                width: 12rem;
+            }
+            p{
+                font-family: v.$fuenteTercera;
+                font-size: 3.2rem;
+                color: v.$primario;
+            }
+        }
+
+        
+        @include m.tablet {
+            @include m.girdColumn(3, 4);
+        }
+
+        @include m.desktop {
+            @include m.girdColumn(3, 7);
+        }
+    }
+}

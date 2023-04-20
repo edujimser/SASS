@@ -1,0 +1,74 @@
+@use 'base/variables' as v;
+@use 'base/minxins' as m;
+
+.header{
+    padding: 3rem 0;
+    position: relative;
+
+    @include m.tablet{
+        padding: 3rem 0;  
+        min-height: 60rem;
+    }
+    @include m.desktop{
+        padding: 2rem 0;  
+        min-height: 60rem;
+    }
+
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.6;
+        content: '';
+        background-color: v.$negro;
+    }
+
+    .contenido-header{
+        position: relative;
+        
+        h1{
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: v.$separacion;
+            font-size: 2rem;
+            
+            @include m.tablet{
+                margin-top: calc(v.$separacion * 3 ) ;
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+//HEADER DE CADA PAGINA
+.header-inicio{
+    background-image: url(../img/header_inicio.webp);
+}
+
+//HEADER - NOSOTROS
+.header-nosotros{
+    background-image: url(../img/header_nosotros.webp);
+    background-size: cover;
+}
+
+//HEADER - PROCESOS
+.header-proceso{
+    background-image: url(../img/header_proceso.webp);
+    background-size: cover;
+}
+
+//HEADER - MENU
+.header-menu{
+    background-image: url(../img/header_menu.webp);
+    background-size: cover;
+}
+
+//HEADER - CONTACTO
+.header-contacto{
+    background-image: url(../img/header_contacto.webp);
+    background-size: cover;
+}

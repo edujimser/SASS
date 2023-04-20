@@ -1,0 +1,53 @@
+@use 'base/variables' as v;
+@use 'base/minxins' as m;
+
+.proceso-cafe{
+    @include m.tablet{
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    &:last-of-type{
+        margin-bottom: 0rem;
+    }
+
+    &:nth-of-type(2){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    &:nth-of-type(4){
+        .texto{
+            order:1;
+        }
+        .imagen{
+            order: 2;;
+        }
+    }
+
+    .texto{
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+
+        h3{
+            margin: 0;
+            text-align: left;
+    
+            &::after{
+                content: '';
+                display: block;
+                width: 50%;
+                height: 2px;
+                background-color: v.$secundario;
+            }
+        }
+
+        p{
+            text-align: justify;
+            margin: 0;
+        }
+    }
+
+    
+}

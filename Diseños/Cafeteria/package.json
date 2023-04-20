@@ -1,0 +1,57 @@
+{
+  "name": "cafeteria",
+  "version": "1.0.0",
+  "description": "Aprendidendo SASS, Gulp, CS Grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Jiménez Serrato",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^0.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sourcemap": "^1.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.0",
+    "postcss": "^8.4.21",
+    "postscss": "^2.0.0"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.2.11",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.60.0",
+    "sharp": "^0.32.0",
+    "vinyl-fs": "^3.0.3"
+  },
+  "browserslist": [
+    "last 1 version",
+    ">1%",
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions",
+    "last 2 iOS versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Samsung versions",
+    "last 2 UCAndroid versions",
+    "IE 11",
+    "last 3 Chrome versions",
+    "last 3 Firefox versions",
+    "last 3 Safari versions",
+    "last 3 Edge versions",
+    "last 3 Opera versions",
+    "last 3 iOS versions",
+    "last 3 ChromeAndroid versions",
+    "last 3 Samsung versions",
+    "last 3 UCAndroid versions",
+    "IE 11",
+    "IE 10",
+    "IE 9"
+  ]
+}
