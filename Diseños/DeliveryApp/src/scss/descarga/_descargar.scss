@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.descargar{
+    background-color: #e1e0e0;
+    padding-top: 5rem;
+
+    &__grid{
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+        }
+    }
+
+    &__imagen{
+        @include m.tablet {
+            width: 60%;
+            margin: 0  auto;
+            transition: transform 0.5s ease-in-out;
+            transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+
+            &:hover{
+                transform: rotate(10deg);
+                width: 65%;
+                
+            }
+        }
+    }
+}

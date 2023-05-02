@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.favoritos{
+    background-color: rgb(225, 224, 224);
+    padding: 5rem 0;
+    
+    &__heading{
+        text-align: center;
+        color: v.$secundario;
+    }
+
+    &__grid{
+        @include m.tablet {
+            @include m.grid(2, 5rem);
+        }
+    }
+}

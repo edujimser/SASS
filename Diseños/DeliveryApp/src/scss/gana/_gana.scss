@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.gana{
+    
+
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 5rem;
+    }
+
+    &__contenido{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        row-gap: 2rem;
+    }
+
+    &__descripcion{
+        text-align: justify;
+    }
+
+    &__boton{
+        margin: 0 auto;
+        button{
+            @include m.boton(v.$primario, v.$blanco);
+        }
+        
+    }
+
+}

@@ -1,0 +1,11 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.ganaDinero{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+    &__heading{
+        text-align: center;
+    }
+}
