@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.estadistica{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+    h2{
+        
+        border-bottom: 5px solid v.$primario;
+        display: block;
+        text-align: center;
+
+        @include m.tablet{
+            display: inline;
+        }
+    }
+
+    p{
+        text-align: justify;
+        margin: auto 1rem auto 1rem;
+
+        @include m.tablet{
+            margin: auto;
+        }
+    }
+}

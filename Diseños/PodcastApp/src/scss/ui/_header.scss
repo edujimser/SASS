@@ -1,0 +1,74 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.site_header{
+    @include m.bgImage('../img/header.webp', v.$secundarioOpacity);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    .header-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5rem;
+        
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .logo{
+            width: 20rem;
+            height: 10rem;
+            margin: 0 auto;
+
+            @include m.tablet {
+             margin: 0;   
+            }
+        }
+    
+        .contenido-header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                color: white;
+                width: 90%;
+                padding-bottom: 2rem;
+                text-align: center;
+            }
+            .btn{
+                background-color: v.$primario;
+                padding: 1rem 3rem;
+                color: v.$secundario;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            @include m.tablet {
+                display: block;
+                h1{
+                    color: white;
+                    width: 30%;
+                    padding-bottom: 2rem;
+                    text-align: left;
+                }
+                .btn{
+                    background-color: v.$primario;
+                    padding: 1rem 3rem;
+                    color: v.$secundario;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+
+
+
+

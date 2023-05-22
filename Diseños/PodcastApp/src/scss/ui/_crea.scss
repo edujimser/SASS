@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.crea-grid{
+    padding-top: 5rem;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        row-gap: 2rem;
+        align-items: center;
+    }
+}
+
+.crea-grid{
+    .contenido{
+
+        h2{
+            text-align: center;
+            border-bottom: 5px solid v.$primario;
+            display: block;
+
+            @include m.tablet {
+                text-align: left;
+                border-bottom: 5px solid v.$primario;
+                display: inline;
+            }
+        }
+
+        p{
+            text-align: center;
+            @include m.tablet {
+                text-align: left;
+            }
+        }
+
+    }
+}
