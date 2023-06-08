@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.lugares{
+    &__heading{
+        text-align: center;
+    }
+
+    &__grid{
+        
+        @include m.telefono {
+            display: grid;
+            grid-template-columns: repeat(4, 30rem);
+            column-gap: 4rem;
+            @include m.scrollHorizontal();
+        }   
+        
+        @include m.desktop {
+            @include m.grid(4, 3rem);
+        }
+    }
+}
+
+.lugar{
+    &__imagen{
+        border-radius:1rem;
+    }
+
+    &__nombre{
+        font-size:1.8rem;
+        text-align: center;
+    }
+}
+

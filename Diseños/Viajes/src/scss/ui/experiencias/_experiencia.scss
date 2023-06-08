@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.experiencia{
+
+    &__titulo{
+        font-weight: 700;
+    }
+
+    &__descripcion{
+        font-size: 1.4rem;
+    }
+}

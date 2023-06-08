@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.anfitrion{
+    min-height: 80rem;
+    padding: 5rem;
+    display: grid;
+    row-gap: 5rem;
+    color: white;
+
+    background-image: linear-gradient(to bottom, v.$negro 0%, v.$negro 50%, transparent 50%), url(../img/anfitrion.webp);
+    background-position: center, center bottom;
+    background-repeat: no-repeat;
+
+    @include m.telefono {
+        grid-template-rows: repeat(2, 1fr);
+        min-height: 80rem;
+        background-size: 100%, 60rem;
+        background-position: center, center bottom;
+    }
+
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr);
+        min-height: auto;
+        background-image: linear-gradient(to right, v.$negro 0%, v.$negro 45%, transparent 55%), url(../img/anfitrion.webp);
+        background-size: 100%, auto;
+        background-position: right, top right;
+        padding: 15rem 5rem;
+    }
+
+    &__texto{
+        max-width: 100%;
+        color: white;
+        @include m.tablet {
+            max-width: 50%;
+        }
+    }
+
+    &__enlace{
+        @include m.boton(v.$blanco, v.$negro);
+        border-radius: 1rem;
+    }
+}

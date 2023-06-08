@@ -1,0 +1,28 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.experiencias{
+    padding-top: 5rem;
+
+    &__heading{
+        text-align: center;
+    }
+
+    &__descripcion{
+        text-align: center;
+    }
+
+    &__listado{
+        padding-top:5rem;
+
+        display: grid;
+        grid-template-columns: repeat(3, 30rem);
+        column-gap: 4rem;
+        @include m.scrollHorizontal();
+
+        @include m.tablet{
+            color: rgb(32, 107, 73);
+            @include m.grid(3,4rem);
+        }
+    }
+}

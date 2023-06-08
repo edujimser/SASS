@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.barra{
+    display: none;
+
+    @include m.tablet{
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nombre{
+        color: v.$blanco;
+    }
+
+    &__navegacion{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    &__link{
+        color: v.$blanco;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+}
